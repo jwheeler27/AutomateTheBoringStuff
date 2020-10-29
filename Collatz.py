@@ -11,7 +11,7 @@
 def collatz(number):
 
     if number == 1:
-        return number
+        quit()
     elif number % 2 == 0:
         result = number // 2
         print(result)
