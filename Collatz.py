@@ -24,4 +24,7 @@ def collatz(number):
 
 if __name__ == '__main__':
 
-    collatz(int(input('Type in an integer: ')))
+    try:
+        collatz(int(input('Type in an integer: ')))
+    except ValueError:
+        print('Please input an integer')
